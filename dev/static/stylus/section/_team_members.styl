@@ -1,0 +1,41 @@
+.team_members
+	text-align center
+	.section-text__big
+		margin-bottom: 70px
+.team_members__info
+	position relative
+	display inline-block
+	width 20%
+	margin 0 2%
+	vertical-align top
+	padding-top 150px
+	span
+		display block
+	&:before
+		content ''
+		display block
+		position absolute
+		top 0
+		left 50%
+		transform translateX(-50%)
+		
+.team-item__lead
+	&:before
+		sprite($s-team_lead)	
+.team-item__model
+	&:before
+		sprite($s-team_model)	
+.team-item__master
+	&:before
+		sprite($s-team_master)	
+.team-item__manages
+	&:before
+		sprite($s-team_manages)
+	
+.team_members__name
+	font-size 16px
+	font-family: boldFont
+	margin-bottom 20px
+.team_members__role
+	font-size 15px
+	

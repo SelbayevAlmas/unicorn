@@ -1,0 +1,144 @@
+// Подключаем стили библиотек
+@import '_libs.styl'
+
+// Подключаем переменные
+@import '_vars.styl'
+
+// Подключаем спрайты (просто раскоментируем импорт при появлении PNG спрайтов)
+@import '_sprite.styl'
+
+// Подключаем миксины
+@import '_mixins.styl'
+
+html 
+  line-height 1
+  font-size 14px
+
+body
+ 
+
+h1,h2,h3,h4,h5,h6
+  margin 0
+
+ul,li
+  margin 0
+  padding 0
+  list-style-type none
+  
+p
+  margin 0
+  
+a
+  text-decoration none
+  color black
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+  vertical-align middle
+  
+textarea
+  resize none
+
+section
+  padding 90px 0
+  position relative
+
+input,
+select,
+button
+  outline none
+
+*, *:before, *:after
+  box-sizing border-box
+  
+.hide
+  display none
+  
+.show
+  display block
+  
+::-moz-selection 
+  background: #b3d4fc;
+  text-shadow: none;
+  
+::selection 
+  background: #b3d4fc;
+  text-shadow: none;
+  
+.clearfix:before,
+.clearfix:after 
+  content: " ";
+  display: table;
+
+.clearfix:after 
+  clear: both;
+
+.clearfix 
+  *zoom: 1;
+.wrapper
+  overflow hidden
+.container
+  position relative
+  width 97%
+  max-width 1170px
+  margin 0 auto
+
+
+
+// Общие стили
+@import '_common_styles.styl'
+
+// Стили секции Главный Баннер
+@import 'section/_top_banner.styl'
+
+// Стили секции Who And Why
+@import 'section/_who_and_why.styl'
+
+// Стили секции Advantage
+@import 'section/_advantage.styl'
+
+// Стили секции Featured
+@import 'section/_featured.styl'
+
+// Стили секции clients
+@import 'section/_clients.styl'
+
+// Стили секции _portfolio
+@import 'section/_portfolio.styl'
+
+// Стили секции quote
+@import 'section/_quote.styl'
+
+// Стили секции _team_members
+@import 'section/_team_members.styl'
+
+// Стили секции facts-and-numbers
+@import 'section/_facts-and-numbers.styl'
+
+// Стили секции _articles
+@import 'section/_articles.styl'
+
+// Стили секции _articles-slider
+@import 'section/_articles-slider.styl'
+
+// Стили секции _twitter
+@import 'section/_twitter.styl'
+
+// Стили шапки
+@import 'modules/_header.styl'
+
+// Стили меню
+@import 'modules/_menu.styl'
+
+// Стили главной страницы
+@import 'page/_index.styl'
+
+// Стили футера
+@import 'modules/_footer.styl'
+
+// Стили медиазапросов
+@import '_media.styl'

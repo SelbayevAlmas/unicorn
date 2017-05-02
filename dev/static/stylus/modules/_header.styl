@@ -1,0 +1,70 @@
+.header
+	position absolute
+	top 0
+	left 50%
+	width 97%
+	max-width 1170px
+	transform translateX(-50%)
+	padding-top 50px
+	overflow hidden
+	z-index 10
+.header-logo
+	float left
+.header-nav
+	float right;
+	&.active
+		.nav-toggle__line--top
+			top 10px
+			transition 1s
+			transform rotate(45deg)
+		.nav-toggle__line--middle
+			opacity 0
+			transition 1s
+		.nav-toggle__line--bottom
+			top 10px
+			transition 1s
+			transform rotate(-45deg)
+		.header-nav__list
+			top 0
+			transition 1s
+.header-nav__list
+	position relative
+	top -1000px
+	display inline-block
+	margin-right 12px
+	vertical-align middle
+	transition 1s
+	li
+		display inline-block
+		margin-right: 12px;
+		&:last-child
+			margin-right: 0;
+	a
+		font-family boldFont
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 16px
+.header-nav__toggle
+	position relative
+	display inline-block
+	vertical-align middle
+	width 25px
+	height 20px
+	cursor pointer
+.header-nav__line
+	position absolute
+	right 0
+	width 90%
+	height 2px
+	display block
+	background-color: mainColor
+.nav-toggle__line--top
+	top 5px
+	transition 1s
+.nav-toggle__line--middle
+	top 9px
+	opacity 1
+	transition 1s
+.nav-toggle__line--bottom
+	top 13px
+	transition 1s
